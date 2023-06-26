@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container{
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+      background-color: black;
+      height: 748px;
+      width: 748px;
+    }
+    
+    .grid-items{
+      background-color: #F0F1EC;
+    }
+
+    .first{
+      background-color: #E72F24;
+    }
+
+    .second{
+      grid-column: 2/5;
+    }
+
+    .fifth{
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+
+    .eigth{
+      background-color: #F9D01E;
+    }
+
+    .third{
+      grid-row: 2/4;
+    }
+
+    .fourth{
+      grid-area: 2/2/4/4;
+    }
+
+    .ninth{
+      background-color: #232629;
+    }
+
+    .sixth{
+      grid-row: 3/5;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="grid-items first"></div>
+    <div class="grid-items second"></div>
+    <div class="grid-items third"></div>
+    <div class="grid-items fourth"></div>
+    <div class="grid-items fifth"></div>
+    <div class="grid-items sixth"></div>
+    <div class="grid-items seventh"></div>
+    <div class="grid-items eigth"></div>
+    <div class="grid-items ninth" ></div>
+  </div>
+</body>
+
+</html>
